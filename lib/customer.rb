@@ -16,7 +16,7 @@ class Customer
     Meal.all.select{|meal|meal.customer == self}
   end
   def waiters
-    Meal.all.select{|meal|
+    Meal.all.map{|meal|
       if meal.waiter == self
         meal.waiter
       end
