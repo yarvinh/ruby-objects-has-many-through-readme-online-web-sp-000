@@ -13,17 +13,24 @@ class Customer
     Meal.new(waiter,self,total,tip )
   end
   def meals
+    
   end
 end
 
-# describe "Customer" do
-#   describe "#new_meal" do
-#     it "initializes a meal using the current Customer instance, a provided Waiter instance and a total and tip" do
-#       howard = Customer.new("Howard", 30)
-#       terrance = Waiter.new("Terrance", 1)
-#       howard.new_meal(terrance, 10, 1)
-#
-#       expect(Meal.all.first.waiter).to eq(terrance)
-#       expect(Meal.all.first.customer).to eq(howard)
-#     end
-#   end
+# it "returns an Array of Meal instances associated with this customer" do
+#   howard = Customer.new("Howard", 30)
+#   daniel = Customer.new("Daniel", 30)
+#   terrance = Waiter.new("Terrance", 1)
+#   joe = Waiter.new("Joe", 10)
+#   esmery = Waiter.new("Esmery", 2)
+#   andrew = Waiter.new("Andrew", 3)
+#   
+#   howard.new_meal(terrance, 15, 2)
+#   howard.new_meal(joe, 15, 4)
+#   howard.new_meal(andrew, 15, 5)
+#   daniel.new_meal(terrance, 20, 1)
+#   daniel.new_meal(esmery, 15, 3)
+#   
+#   expect(Meal.all.length).to eq(5)
+#   expect(howard.meals.length).to eq(3)
+#   expect(daniel.meals.length).to eq(2)
