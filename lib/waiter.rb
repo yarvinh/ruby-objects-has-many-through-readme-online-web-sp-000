@@ -18,7 +18,7 @@ class Waiter
   def best_tipper
     waiter = []
     value = 0
-    Meal.all.each{|meal|
+    Meal.all.map{|meal|
       if meal.waiter == self
         if meal.tip > value
         value = meal.tip
