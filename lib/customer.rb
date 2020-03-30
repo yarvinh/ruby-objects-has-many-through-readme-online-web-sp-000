@@ -16,9 +16,10 @@ class Customer
     Meal.all.select{|meal|meal.customer == self}
   end
   def waiters
+    waiter = []
     Meal.all.map{|meal|
       if meal.customer == self
-        meal.waiter.name
+        waiter << meal.waiter.name
       end
     }
   end
