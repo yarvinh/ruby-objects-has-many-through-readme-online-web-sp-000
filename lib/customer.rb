@@ -17,7 +17,7 @@ class Customer
   end
   def waiters
     waiter = []
-    Meal.all.map{|meal|
+    Meal.all.each{|meal|
       if meal.customer == self
         waiter << meal.waiter
       end
