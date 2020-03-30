@@ -20,9 +20,9 @@ class Waiter
     value = 0
     Meal.all.each{|meal|
       if meal.waiter == self
-        if i > value
-        value = i
-      waiter << meal.customer
+        if meal.tip > value
+        value = meal.tip
+        waiter << meal.customer
     end
       end
     }
