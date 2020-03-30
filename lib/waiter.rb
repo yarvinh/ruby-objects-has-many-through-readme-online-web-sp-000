@@ -16,16 +16,16 @@ class Waiter
     Meal.all.select{|meal|meal.waiter == self}
   end
   def best_tipper
-    waiter = []
+    waiter = ""
     value = 0
     Meal.all.map{|meal|
       if meal.waiter == self
         if meal.tip > value
         value = meal.tip
-        value
+      waiter =  meal.customer
     end
       end
     }
-    #  waiter
+      waiter
   end
 end
