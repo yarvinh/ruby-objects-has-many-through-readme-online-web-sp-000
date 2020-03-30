@@ -12,11 +12,6 @@ class Customer
 
   def new_meal(waiter,total,tip = 0)
     Meal.new(waiter,self,total,tip )
-    # customer = self
-    # customer.waiter = waiter
-    # customer.total = total
-    # customer.tip = tip
-    # customer
   end
 end
 
