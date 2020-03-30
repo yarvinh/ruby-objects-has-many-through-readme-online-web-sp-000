@@ -26,6 +26,6 @@ class Waiter
     end
       end
     }
-    # waiter
+     waiter
   end
 end
