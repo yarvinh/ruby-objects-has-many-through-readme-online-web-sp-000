@@ -22,6 +22,7 @@ class Customer
         waiter << meal.waiter.name
       end
     }
+    waiter
   end
 end
 
