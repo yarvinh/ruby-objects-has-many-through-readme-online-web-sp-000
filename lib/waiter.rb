@@ -22,10 +22,10 @@ class Waiter
       if meal.waiter == self
         if meal.tip > value
         value = meal.tip
-        waiter << value
+        # waiter << value
     end
       end
     }
-     waiter
+    #  waiter
   end
 end
