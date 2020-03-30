@@ -19,7 +19,7 @@ class Waiter
     waiter = []
     Meal.all.each{|meal|
       if meal.waiter == self
-       meal.customer
+      waiter << meal.customer
       end
     }
     waiter
