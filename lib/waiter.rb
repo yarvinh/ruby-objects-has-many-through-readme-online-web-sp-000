@@ -17,7 +17,7 @@ class Waiter
   end
   def best_tipper
     waiter = []
-    Meal.all.each{|meal|
+    Meal.all.map{|meal|
       if meal.waiter == self
       meal.tip.sort
       end
