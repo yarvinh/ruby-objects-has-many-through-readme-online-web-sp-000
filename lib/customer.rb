@@ -19,7 +19,7 @@ class Customer
     waiter = []
     Meal.all.map{|meal|
       if meal.customer == self
-        waiter << meal.waiter.name
+        waiter << meal.waiter
       end
     }
     waiter
