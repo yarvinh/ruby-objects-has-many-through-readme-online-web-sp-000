@@ -15,4 +15,13 @@ class Waiter
   def meals
     Meal.all.select{|meal|meal.waiter == self}
   end
+  def best_tipper
+    waiter = []
+    Meal.all.each{|meal|
+      if meal.waiter == self
+        waiter << meal.waiter
+      end
+    }
+    waiter
+  end
 end
