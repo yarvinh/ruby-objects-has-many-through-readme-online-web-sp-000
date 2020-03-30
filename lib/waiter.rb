@@ -19,7 +19,7 @@ class Waiter
     waiter = []
     Meal.all.map{|meal|
       if meal.waiter == self
-      meal.tip.sort
+      meal.tip
       end
     }
     # waiter
