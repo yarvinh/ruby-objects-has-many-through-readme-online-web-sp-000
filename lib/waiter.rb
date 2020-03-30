@@ -22,6 +22,6 @@ class Waiter
       meal.tip.sort
       end
     }
-    waiter
+    # waiter
   end
 end
